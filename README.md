@@ -15,7 +15,7 @@ Aplicação REST API de gerenciamento de informações cadastrais em Python util
 pip install -r requirements.txt
 ```
 
-## Utilização utilização
+## Utilização
 1. Clone o repositório para sua máquina
 
    ``
