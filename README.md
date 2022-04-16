@@ -15,16 +15,17 @@ Aplicação REST API de gerenciamento de informações cadastrais em Python util
 pip install -r requirements.txt
 ```
 
-## Exemplo de utilização
+## Utilização utilização
 1. Clone o repositório para sua máquina
 
    ``
    git clone https://github.com/vmeazevedo/REST-API-Flask_VINEFLIX
    ``
 2. Execute o arquivo python ``app.py``.
-3. Abra o POSTMAN e importe a collection ``REST_API - VineFlix.postman_collection.json``, localizada na pasta 'collection'.
-4. Execute a Request de Cadastro criar um id de usuário.
-5. Execute a Request de Login para que o token seja gerado validando assim suas requests.
-6. Siga o padrão da collection para realização das chamadas, em caso de dúvida sobre o consumo da API, a documentação dos testes se encontra na pasta 'teste'.
-7. Após a utilização execute a Request de Logout para invalidar seu token de sessão.
+3. Abra o POSTMAN e importe a collection ``REST_API - VineFlix.postman_collection.json``, localizada na pasta ``collection``.
+4. Via ``POSTMAN`` execute a request de ``Cadastro`` para criar um novo ``user_id``, ele será necessário para criação do token.
+5. Execute a request de ``Login`` para que o token seja gerado validando assim suas demais requests.
+6. O arquivo ``swagger.json`` contém toda a documentação da API e pode ser encontra na pasta ``swagger``. Use o site (``https://editor.swagger.io/``) para importar o arquivo e ver a documentação online.
+7. Em caso de dúvida sobre o consumo da API, a documentação dos testes se encontra na pasta ``teste``.
+8. Após a utilização execute a Request de ``Logout`` para invalidar seu token de sessão.
 
