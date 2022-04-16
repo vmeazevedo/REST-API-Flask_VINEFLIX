@@ -1,0 +1,180 @@
+openapi: 3.0.0
+info:
+  title: REST_API - VineFlix
+  version: 1.0.0
+servers:
+  - url: http://127.0.0.1:5000
+components:
+  securitySchemes:
+    noauthAuth:
+      type: http
+      scheme: noauth
+    bearerAuth:
+      type: http
+      scheme: bearer
+paths:
+  /clientes:
+    get:
+      tags:
+        - General
+      summary: /clientes
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /clientes/2:
+    get:
+      tags:
+        - General
+      summary: /clientes/{id}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    post:
+      tags:
+        - General
+      summary: /clientes/{id}
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                nome: Vinicius Azevedo
+                email: teste@gmail.com
+                telefone: '123456789'
+                plano: teste
+      security:
+        - noauthAuth: []
+      parameters:
+        - name: Authorization
+          in: header
+          schema:
+            type: string
+          example: >-
+            Bearer
+            eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDAzNjE4NiwianRpIjoiMDI4OGY5MWItMTA1Mi00ZGIyLWE5ZGEtOGQwZjQzYjhjYTE1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjUwMDM2MTg2LCJleHAiOjE2NTAwMzcwODZ9.HG8hYz8voBASx1zgfvusm1M4mmUgECX1yV2hGF0c1BA
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    put:
+      tags:
+        - General
+      summary: /clientes/{id}
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                nome: Vinicius Azevedo
+                email: teste@gmail.com
+                telefone: '123456789'
+                plano: básico
+      security:
+        - noauthAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    delete:
+      tags:
+        - General
+      summary: /cliente/{id}
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /usuarios/2:
+    get:
+      tags:
+        - General
+      summary: /usuarios/{user_id}
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /usuarios/3:
+    delete:
+      tags:
+        - General
+      summary: /usuarios/{user_id}
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /login:
+    post:
+      tags:
+        - General
+      summary: /login
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                login: ana
+                senha: asdf
+      parameters:
+        - name: Content-Type
+          in: header
+          schema:
+            type: string
+          example: application/json
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /logout:
+    post:
+      tags:
+        - General
+      summary: /logout
+      requestBody:
+        content: {}
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /cadastro:
+    post:
+      tags:
+        - General
+      summary: /cadastro
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                login: joão
+                senha: asdf
+      parameters:
+        - name: Content-Type
+          in: header
+          schema:
+            type: string
+          example: application/json
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}

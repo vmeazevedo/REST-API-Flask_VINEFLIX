@@ -27,3 +27,4 @@ pip install -r requirements.txt
 5. Execute a Request de Login para que o token seja gerado validando assim suas requests.
 6. Siga o padrão da collection para realização das chamadas, em caso de dúvida sobre o consumo da API, a documentação dos testes se encontra na pasta 'teste'.
 7. Após a utilização execute a Request de Logout para invalidar seu token de sessão.
+
