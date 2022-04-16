@@ -33,7 +33,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/clientes/2",
+					"raw": "http://127.0.0.1:5000/clientes/1",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -44,7 +44,7 @@
 					"port": "5000",
 					"path": [
 						"clientes",
-						"2"
+						"1"
 					]
 				}
 			},
@@ -54,7 +54,14 @@
 			"name": "/clientes/{id}",
 			"request": {
 				"auth": {
-					"type": "noauth"
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDEzNTU0NiwianRpIjoiNGJiZDljZmEtMjRhMy00OTQzLWE0MjItODRmMzI5YmFkNzE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjUwMTM1NTQ2LCJleHAiOjE2NTAxMzY0NDZ9.Ab4lB8nSWLl6yXXCaGgPRx0HpHwQRd6dRZ7TI4BzrEI",
+							"type": "string"
+						}
+					]
 				},
 				"method": "POST",
 				"header": [
@@ -67,7 +74,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"Vinicius Azevedo\",\r\n    \"email\": \"teste@gmail.com\",\r\n    \"telefone\": \"123456789\",\r\n    \"plano\": \"teste\"\r\n}",
+					"raw": "{\r\n    \"nome\": \"Vinicius Azevedo2\",\r\n    \"email\": \"teste@gmail.com\",\r\n    \"telefone\": \"123456789\",\r\n    \"plano\": \"básico\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -75,7 +82,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:5000/clientes/2",
+					"raw": "http://127.0.0.1:5000/clientes/3",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -86,7 +93,7 @@
 					"port": "5000",
 					"path": [
 						"clientes",
-						"2"
+						"3"
 					]
 				}
 			},
@@ -96,13 +103,20 @@
 			"name": "/clientes/{id}",
 			"request": {
 				"auth": {
-					"type": "noauth"
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDEzNTU0NiwianRpIjoiNGJiZDljZmEtMjRhMy00OTQzLWE0MjItODRmMzI5YmFkNzE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjUwMTM1NTQ2LCJleHAiOjE2NTAxMzY0NDZ9.Ab4lB8nSWLl6yXXCaGgPRx0HpHwQRd6dRZ7TI4BzrEI",
+							"type": "string"
+						}
+					]
 				},
 				"method": "PUT",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"Vinicius Azevedo\",\r\n    \"email\": \"teste@gmail.com\",\r\n    \"telefone\": \"123456789\",\r\n    \"plano\" : \"básico\"\r\n}",
+					"raw": "{\r\n    \"nome\": \"Vinicius ALTERADO Azevedo\",\r\n    \"email\": \"teste@gmail.com\",\r\n    \"telefone\": \"123456789\",\r\n    \"plano\" : \"básico\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -135,7 +149,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDAzNzU5OCwianRpIjoiZDI5YjgxYmEtNWI1ZS00NWNkLThkODUtNjU3ZTk2ZjUyNWU0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjUwMDM3NTk4LCJleHAiOjE2NTAwMzg0OTh9.x5entUlr9ctlM4qtekt68FrjPeMqzP6NIAJYTovr25Y",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDEzNTU0NiwianRpIjoiNGJiZDljZmEtMjRhMy00OTQzLWE0MjItODRmMzI5YmFkNzE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjUwMTM1NTQ2LCJleHAiOjE2NTAxMzY0NDZ9.Ab4lB8nSWLl6yXXCaGgPRx0HpHwQRd6dRZ7TI4BzrEI",
 							"type": "string"
 						}
 					]
@@ -143,7 +157,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/clientes/2",
+					"raw": "http://127.0.0.1:5000/clientes/3",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -154,7 +168,7 @@
 					"port": "5000",
 					"path": [
 						"clientes",
-						"2"
+						"3"
 					]
 				}
 			},
@@ -191,7 +205,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDA0MTI4NiwianRpIjoiNTZkMDI4ZGMtNzM0OS00OWJlLWE2ZDQtZDBkMWI3Yzg1ODEwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjUwMDQxMjg2LCJleHAiOjE2NTAwNDIxODZ9.GZjLvzD9ORxdE-lFTQIbb9WWh3IM5TYSAnVv80mE4oc",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDEzNTU0NiwianRpIjoiNGJiZDljZmEtMjRhMy00OTQzLWE0MjItODRmMzI5YmFkNzE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjUwMTM1NTQ2LCJleHAiOjE2NTAxMzY0NDZ9.Ab4lB8nSWLl6yXXCaGgPRx0HpHwQRd6dRZ7TI4BzrEI",
 							"type": "string"
 						}
 					]
@@ -256,7 +270,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDA0MDgzMCwianRpIjoiMGRlZjRlY2EtMDIyYi00ODE2LWE4N2EtYWNjM2ZjMDE2NWUwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNjUwMDQwODMwLCJleHAiOjE2NTAwNDE3MzB9.whPGKcGKlzI_U9LXgnX29SKPF00h1BNrVciQPm0ONCs",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTY1MDEzNTU0NiwianRpIjoiNGJiZDljZmEtMjRhMy00OTQzLWE0MjItODRmMzI5YmFkNzE4IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNjUwMTM1NTQ2LCJleHAiOjE2NTAxMzY0NDZ9.Ab4lB8nSWLl6yXXCaGgPRx0HpHwQRd6dRZ7TI4BzrEI",
 							"type": "string"
 						}
 					]
@@ -293,7 +307,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"login\": \"joão\",\r\n    \"senha\": \"asdf\"\r\n}"
+					"raw": "{\r\n    \"login\": \"vmeazevedo2\",\r\n    \"senha\": \"123456\"\r\n}"
 				},
 				"url": {
 					"raw": "http://127.0.0.1:5000/cadastro",
