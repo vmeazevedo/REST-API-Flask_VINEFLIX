@@ -30,3 +30,5 @@ pip install -r requirements.txt
 8. Em caso de dúvida sobre o consumo da API, a documentação dos testes se encontra na pasta ``teste``.
 9. Após a utilização execute a Request de ``Logout`` para invalidar seu token de sessão.
 
+## Ex
+<font color=#006400> GET</font> /clientes
