@@ -325,6 +325,29 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "/confirmacao/{user_id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/confirmacao/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"confirmacao",
+						"1"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
