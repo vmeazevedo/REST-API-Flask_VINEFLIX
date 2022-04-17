@@ -24,8 +24,9 @@ pip install -r requirements.txt
 2. Execute o arquivo python ``app.py``.
 3. Abra o POSTMAN e importe a collection ``REST_API - VineFlix.postman_collection.json``, localizada na pasta ``collection``.
 4. Via ``POSTMAN`` execute a request de ``Cadastro`` para criar um novo ``user_id``, ele será necessário para criação do token.
-5. Execute a request de ``Login`` para que o token seja gerado validando assim suas demais requests.
-6. O arquivo ``swagger.json`` contém toda a documentação da API e pode ser encontra na pasta ``swagger``. Use o site (``https://editor.swagger.io/``) para importar o arquivo e ver a documentação online.
-7. Em caso de dúvida sobre o consumo da API, a documentação dos testes se encontra na pasta ``teste``.
-8. Após a utilização execute a Request de ``Logout`` para invalidar seu token de sessão.
+5. Execute a request de ``Confirmação`` para validar o seu novo cadastro.
+6. Execute a request de ``Login`` para que o token seja gerado validando assim suas demais requests.
+7. O arquivo ``swagger.json`` contém toda a documentação da API e pode ser encontra na pasta ``swagger``. Use o site (``https://editor.swagger.io/``) para importar o arquivo e ver a documentação online.
+8. Em caso de dúvida sobre o consumo da API, a documentação dos testes se encontra na pasta ``teste``.
+9. Após a utilização execute a Request de ``Logout`` para invalidar seu token de sessão.
 
