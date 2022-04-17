@@ -8,17 +8,20 @@ class UserModel(banco.Model):
     user_id = banco.Column(banco.Integer, primary_key=True)
     login = banco.Column(banco.String(20))
     senha = banco.Column(banco.String(20))
+    ativado = banco.Column(banco.Boolean, default=False)
 
     # Cria o construtor
-    def __init__(self, login, senha):
+    def __init__(self, login, senha, ativado):
         self.login = login
         self.senha = senha
+        self.ativado = ativado
     
     # Retorno json
     def json(self):
         return {
             'user_id': self.user_id,
-            'login': self.login
+            'login': self.login,
+            'ativado': self.ativado
         }
     
     @classmethod
