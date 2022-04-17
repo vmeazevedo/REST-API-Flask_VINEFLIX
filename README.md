@@ -31,4 +31,4 @@ pip install -r requirements.txt
 9. Após a utilização execute a Request de ``Logout`` para invalidar seu token de sessão.
 
 ## Ex
-<font color=Green> GET</font> /clientes
+font color=\"red\">Texto com cor vermelha</font> /clientes
