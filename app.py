@@ -34,15 +34,13 @@ def token_de_acesso_invalidado(jwt_header, jwt_payload):
 api.add_resource(Clientes, '/clientes')
 api.add_resource(Cliente, '/clientes/<string:cliente_id>')
 api.add_resource(User, '/usuarios/<int:user_id>')
-api.add_resource(UserRegister, '/cadastro')
-api.add_resource(UserLogin, '/login')
-api.add_resource(UserLogout, '/logout')
-api.add_resource(UserConfirm, '/confirmacao/<int:user_id>')
-
+api.add_resource(UserRegister, '/cadastro') # Criação de usuário
+api.add_resource(UserLogin, '/login')   # Login da conta
+api.add_resource(UserLogout, '/logout') # Logout da conta
+api.add_resource(UserConfirm, '/confirmacao/<int:user_id>') # Confirmação de cadastro
 
 
 if __name__ == '__main__':
     from sql_alchemy import banco
     banco.init_app(app)
     app.run(debug=True)
-    
